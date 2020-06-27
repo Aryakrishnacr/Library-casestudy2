@@ -1,0 +1,334 @@
+@import"https://fonts.googleapis.com/css?family=Big Shoulders Display";
+#body{
+    background-color:rgb(178, 183, 194);
+    padding-top: 70px;
+}
+#below-nav {
+    min-height: 199px;
+    background-color: #0a0a25;
+    color: #aaaacc;
+    margin-top: 60px;
+    
+}
+#below-nav h1 {
+    font-size: 55px;
+    font-family:Big Shoulders Display ;
+    line-height: 1;
+    color: #fefeff;
+    margin-top:100px;
+    text-transform: capitalize;
+}
+.label-default {
+    background-color: #777;
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+@media(min-width:767px){
+.well {
+    margin-top: 31px;
+     background-color: rgb(23, 23, 77);
+    border-color: #000022;
+    color: #efefff;
+    min-height: 115px;
+    width:106%;
+ }
+}
+.navbar{
+background-color: rgb(23, 23, 77);
+height: max-content;
+margin-bottom: -5px;
+text-transform: uppercase;
+}
+.content{
+display: flex;
+list-style: none;
+}
+.img{
+width: 50px;
+height: 50px;
+}
+#logo{
+width: 50px;
+height: 50px;
+}
+.row{
+    padding:12px;
+}
+.container {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 0px;
+}
+#container2{
+    
+    background-color:white;
+    margin-top: -25px;
+}
+
+#follow{
+    font-family: Big Shoulders Display;
+}
+
+#btn-twitter{
+background-color: rgb(71, 71, 241);
+}
+#btn-facebook{
+background-color: rgb(32, 32, 179);
+}
+
+#btn-google-plus{
+background-color: rgb(214, 16, 16);
+}
+a {
+background-color: transparent;
+}
+a, a:hover {
+color:white;
+text-decoration: none;
+}
+
+#topnav-right{
+ display:inline-flex;
+float:right;
+padding-top: 2px;
+margin-right: 3px;
+margin-left:12px;
+list-style-type: none;
+}
+#button{
+    margin-left: 12px;
+    border-radius: 2px;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  box-shadow: 6px 6px 4px 6px rgba(0,0,0,0.125);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.wrapper .title{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: rgb(19, 19, 97);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #757575;
+   margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .textarea{
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputfield .custom_select{
+  position: relative;
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before{
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select{
+  -webkit-appearance: none;
+  -moz-appearance:   none;
+  appearance:        none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+  border: 1px solid rgb(9, 9, 82);
+}
+
+.wrapper .form .inputfield p{
+   font-size: 14px;
+   color: #757575;
+}
+.wrapper .form .inputfield .check{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.wrapper .form .inputfield .check .checkmark{
+  width: 15px;
+  height: 15px;
+  border: 1px solid rgb(9, 9, 94);
+  display: block;
+  position: relative;
+}
+.wrapper .form .inputfield .check .checkmark:before{
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 5px;
+  height: 2px;
+  border: 2px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+  display: none;
+}
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+  background: rgb(8, 8, 88);
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+  display: block;
+}
+
+.wrapper .form .inputfield .btn{
+  width: 100%;
+   padding: 8px 10px;
+  font-size: 15px; 
+  border: 0px;
+  background:rgb(11, 11, 107);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputfield .btn:hover{
+  background: rgb(16, 16, 131);
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+}
+#fname{
+  padding-left: 200px;
+  position: relative;
+}
+#lname{
+  padding-left: 200px;
+  position: relative;
+}
+#password{
+  padding-left: 40px;
+  position: relative;
+}
+#conpassword{
+  padding-left: 200px;
+  position: relative;
+}
+/*#gender{
+  padding-left: 200px;
+  position: relative;
+}*/
+#dob{
+  padding-left: 200px;
+  position: relative;
+}
+#email{
+  padding-left: 200px;
+  position: relative;
+}
+#phone{
+  padding-left: 200px;
+  position: relative;
+}
+#address{
+  padding-left: 200px;
+  position: relative;
+}
+.avatar-pic {
+  width: 80px;
+  }
+ #enter{
+  background-color: rgb(10, 10, 73);
+  color: white;
+  
+ }

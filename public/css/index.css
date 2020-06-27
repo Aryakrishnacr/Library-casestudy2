@@ -1,0 +1,119 @@
+@import"https://fonts.googleapis.com/css?family=Big Shoulders Display";
+#body{
+    background-color:rgb(178, 183, 194);
+}
+#below-nav {
+    min-height: 199px;
+    background-color: #0a0a25;
+    color: #aaaacc;
+    margin-top: 60px;
+    
+}
+#below-nav h1 {
+    font-size: 55px;
+    font-family:Big Shoulders Display ;
+    line-height: 1;
+    color: #fefeff;
+    margin-top:100px;
+    text-transform: capitalize;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.label-default {
+    background-color: #777;
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+@media(min-width:767px){
+.well {
+    margin-top: 31px;
+     background-color: rgb(23, 23, 77);
+    border-color: #000022;
+    color: #efefff;
+    min-height: 115px;
+    width:106%;
+ }
+}
+.navbar{
+background-color: rgb(23, 23, 77);
+height: max-content;
+margin-bottom: -5px;
+text-transform: uppercase;
+
+}
+.content{
+display: flex;
+list-style: none;
+}
+.img{
+width: 50px;
+height: 50px;
+}
+#logo{
+width: 50px;
+height: 50px;
+}
+.row{
+    padding:12px;
+}
+.container {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 0px;
+}
+#container2{
+    
+    background-color:white;
+    margin-top: -25px;
+}
+.pull-right {
+    float: right;
+}
+#follow{
+    font-family: Big Shoulders Display;
+}
+
+#btn-twitter{
+background-color: rgb(71, 71, 241);
+}
+#btn-facebook{
+background-color: rgb(32, 32, 179);
+}
+
+#btn-google-plus{
+background-color: rgb(214, 16, 16);
+}
+a {
+background-color: transparent;
+}
+a, a:hover {
+color:white;
+text-decoration: none;
+}
+
+#topnav-right{
+ display:inline-flex;
+float:right;
+padding-top: 2px;
+margin-right: 3px;
+margin-left:12px;
+list-style-type: none;
+}
+#button{
+    margin-left: 12px;
+    border-radius: 2px;
+}

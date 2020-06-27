@@ -1,0 +1,24 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "This is a library app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aryakrishnacr/Library.git"
+  },
+  "author": "Aryakrishna CR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aryakrishnacr/Library/issues"
+  },
+  "homepage": "https://github.com/Aryakrishnacr/Library#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20"
+  }
+}

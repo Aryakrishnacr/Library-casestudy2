@@ -69,9 +69,14 @@
                 <h3><%=author.name%></h3>
                 <div class="row">
                   <div class="col-xs-9">
-                    <h4><span class="label label-default"><a href="#" class="text-white"><%=author.title%></a></span></h4>
-                    <button >Edit</button>
-                    <button>Delete</button>
+                    <h4><span class="label label-default"><a href="#" class="text-white"><%=author.books%></a></span></h4>
+                    <form action="/admin/editauthor/<%=author._id%>"  enctype="multipart/form-data">
+                      <button>edit</button>
+                    
+                      </form>  
+                      <form method="GET" action="/admin/deleteauthor/<%=author._id%>">
+                        <button>Delete</button>
+                      </form> 
                   </div>
                   <div class="col-xs-3"></div>
                 </div>

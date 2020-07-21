@@ -73,7 +73,7 @@
                     <h4>
                       <small style="font-family:courier,'new courier';" class="text-muted"><%=book.genre%>
                     </h4>
-                     <form method="GET" action="/admin/edit/<%=book._id%>">
+                     <form action="/admin/update/<%=book._id%>"  enctype="multipart/form-data">
                     <button>edit</button>
                   
                     </form>  

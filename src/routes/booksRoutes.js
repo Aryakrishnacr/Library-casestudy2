@@ -22,6 +22,16 @@ function router(nav){
     //         img:'book3.jpg'
     //     }
     // ]
+    booksRouter.get('/',function(req,res){
+        Bookdata.find()
+        .then(function(books){
+            res.render("books",{
+                nav,
+            title:'Books',
+            books
+            });
+        })
+    });
    
     booksRouter.get('/:id',function(req,res){
         const id=req.params.id
@@ -35,18 +45,7 @@ function router(nav){
         })
         
     });
-    booksRouter.get('/delete/:id',function(req,res){
-        const id=req.params.id
-        Bookdata.findByIdAndDelete({_id:id})
-        .then(function(book){
-            res.render("book",{nav,
-                title:'library',
-                book
-            
-            });
-        })
-        
-    });
+   
     return booksRouter;
 
 }

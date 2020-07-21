@@ -1,5 +1,14 @@
 const express=require("express");
 const bodyParser = require('body-parser')
+const multer  = require('multer');
+const StoreImage=multer.diskStorage({
+    destination:(req,file,cb)=>{
+        cb(null,'./public/images/');
+    },
+    filename:(req,file,cb)=>{
+        cb(null,file.originalname);
+    }
+});
 const nav=[
     {
         link:'/books',name:'books'},
@@ -10,7 +19,7 @@ const nav=[
     {
             link:'/login',name:'login'},
      {
-            link:'/books',name:'add book'},
+            link:'admin',name:'add book'},
     
      {
             link:'/author',name:'add author'}
@@ -29,6 +38,7 @@ const addauthorRouter=require("./src/routes/addauthorRoutes")(nav)
 const app=new express();
 app.use(express.urlencoded({extended:true}));
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(multer({storage:StoreImage}).single('image'));
 
 app.use(express.static('./public'));
 app.use("/books",booksRouter);
